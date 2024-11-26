@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: ip_info:0.0.1
+    restart: always
+    # command: bash -c "node index.js"
+    user: "${UID}:${GID}"
+    volumes:
+      - .:/myapp
