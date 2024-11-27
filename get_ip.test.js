@@ -26,8 +26,14 @@ const resp = {
 } 
 
 const mockCallback = jest.fn(x => {
-  return resp
+  return x
 });
+
+global.fetch = jest.fn(() =>
+  Promise.resolve({
+    json: () => Promise.resolve(resp),
+  })
+);
 
 test('test ip', async () => {
   expect(await getIP("8.8.8.8", mockCallback)).toEqual(resp);
