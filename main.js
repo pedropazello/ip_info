@@ -16,4 +16,20 @@ getIP("8.8.8.8", (resp) => {
     if (resp.timezone != undefined) {
         console.log(`Country Timezone: ${resp.timezone}`)
     }
+
+    if (resp.timezone != undefined) {
+        console.log(`Country Timezone: ${resp.timezone}`)
+    }
+
+    if (resp.timezone != undefined) {
+        console.log(`Country Timezone: ${resp.timezone}`)
+    }
+
+    if (resp.timezone != undefined) {
+        console.log(`Country Timezone: ${resp.timezone}`)
+    }
+
+    if (resp.timezone != undefined) {
+        console.log(`Country Timezone: ${resp.timezone}`)
+    }
 })
