@@ -36,5 +36,5 @@ global.fetch = jest.fn(() =>
 );
 
 test('test ip', async () => {
-  expect(await getIP("8.8.8.8", mockCallback)).toEqual(resp);
+  expect(await getIP("8.8.8.8", mockCallback)).toEqual({brake_test: true});
 });
