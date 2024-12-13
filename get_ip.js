@@ -5,6 +5,13 @@ async function getIP(IPAdress, callback) {
 
     if (responseJSON.error == true) {
         console.log(`error: ${responseJSON.reason}`)
+        console.log(`error: ${responseJSON.reason}`)
+        console.log(`error: ${responseJSON.reason}`)
+        console.log(`error: ${responseJSON.reason}`)
+        console.log(`error: ${responseJSON.reason}`)
+        console.log(`error: ${responseJSON.reason}`)
+        console.log(`error: ${responseJSON.reason}`)
+        console.log(`error: ${responseJSON.reason}`)
         return
     } else {
         return callback(responseJSON)
